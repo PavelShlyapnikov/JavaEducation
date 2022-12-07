@@ -14,7 +14,7 @@ public class Example_2 {
         } else {
             System.out.println("Число не делится");
         }
-
+in.close();
     }
 
 }
