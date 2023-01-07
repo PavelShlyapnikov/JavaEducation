@@ -12,34 +12,57 @@ public class Example_2 {
 //        на основе оператора выбора switch.
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Укажите название любого дня недели \n(Условие написания: название должно быть с большой буквы): ");
-             String a = in.nextLine();
+        String str1 = "Понедельник";
+        String str2 = "Вторник";
+        String str3 = "Среда";
+        String str4 = "Четверг";
+        String str5 = "Пятница";
+        String str6 = "Суббота";
+        String str7 = "Воскресение";
+
+        System.out.print("Выберите вариант проверки: 1 для if или 2 для switch : ");
+        int b = in.nextInt();
+        System.out.println();
+
+        // метод switch
+        if (b == 1) {
+            System.out.println("Введите день недели: ");
+            String a = in.nextLine();
             switch (a) {
-            case "Понедельник":
-                System.out.println("Это 1-ый день недели");
-                break;
-            case "Вторник":
-                System.out.println("2-ой день недели");
-                break;
-            case "Среда":
-                System.out.println("3-ий день недели");
-                break;
-            case "Четверг":
-                System.out.println("4-ый день недели");
-                break;
-            case "Пятница":
-                System.out.println("5-ый день недели");
-                break;
-            case "Суббота":
-                System.out.println("6-ой день недели");
-                break;
-            case "Воскресенье":
-                System.out.println("7-ой день недели");
-                break;
-                default:
-                    System.out.println("Такого дня нет");
-                    break;
+                case "Понедельник" -> System.out.println("Это 1-ый день недели");
+                case "Вторник" -> System.out.println("2-ой день недели");
+                case "Среда" -> System.out.println("3-ий день недели");
+                case "Четверг" -> System.out.println("4-ый день недели");
+                case "Пятница" -> System.out.println("5-ый день недели");
+                case "Суббота" -> System.out.println("6-ой день недели");
+                case "Воскресенье" -> System.out.println("7-ой день недели");
+                default -> System.out.println("Такого дня нет");
+            }
         }
 
+            //метод if
+            else if (b == 2) {
+                System.out.print("Введите день недели: ");
+                String a = in.next();
+                if (a.equalsIgnoreCase(str1)) {
+                    System.out.println("1-ый день недели");
+                } else if (a.equalsIgnoreCase(str2)) {
+                    System.out.println("2-й день недели");
+                } else if (a.equalsIgnoreCase(str3)) {
+                    System.out.println("3-й день недели");
+                } else if (a.equalsIgnoreCase(str4)) {
+                    System.out.println("4-й день недели");
+                } else if (a.equalsIgnoreCase(str5)) {
+                    System.out.println("5-й день недели");
+                } else if (a.equalsIgnoreCase(str6)) {
+                    System.out.println("6-й день недели");
+                } else if (a.equalsIgnoreCase(str7)) {
+                    System.out.println("7-й день недели");
+                } else {
+                    System.out.println("Такого дня нет");
+                }
+                in.close();
+            }
+        }
     }
-}
+
