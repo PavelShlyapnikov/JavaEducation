@@ -36,10 +36,10 @@ public class Example_2 {
             case "Воскресенье":
                 System.out.println("7-ой день недели");
                 break;
+                default:
+                    System.out.println("Такого дня нет");
+                    break;
         }
-        if(a != "Понедельник" | a != "Вторник" | a != "Среда" | a != "Четверг" | a != "Пятница" | a != "Суббота" | a != "Воскресенье")
-            System.out.println("Такого дня нет");
-
 
     }
 }
