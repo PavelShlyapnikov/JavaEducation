@@ -24,11 +24,11 @@ public class Example_2 {
         int b = in.nextInt();
         System.out.println();
 
-        // метод switch
+        // решение методом switch
         if (b == 1) {
             System.out.println("Введите день недели: ");
-            String a = in.nextLine();
-            switch (a) {
+            String day = in.nextLine();
+            switch (day) {
                 case "Понедельник" -> System.out.println("Это 1-ый день недели");
                 case "Вторник" -> System.out.println("2-ой день недели");
                 case "Среда" -> System.out.println("3-ий день недели");
@@ -40,7 +40,7 @@ public class Example_2 {
             }
         }
 
-            //метод if
+            //решение методом if
             else if (b == 2) {
                 System.out.print("Введите день недели: ");
                 String a = in.next();
