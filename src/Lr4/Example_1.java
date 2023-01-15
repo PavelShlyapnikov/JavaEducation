@@ -16,6 +16,7 @@ public class Example_1 {
                 System.out.print("#");
                 z = z + 1;
             }
+
             System.out.println(" символов в строке " + z);
         }
     }

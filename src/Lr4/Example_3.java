@@ -16,6 +16,7 @@ public class Example_3 {
                 System.out.print(arrayChar[j][i]);
             }
             System.out.println("\r");
+
         }
     }
 }

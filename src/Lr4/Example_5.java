@@ -36,6 +36,7 @@ public class Example_5 {
                 System.out.print(array2[i][j] + " " + " ");
             }
             System.out.println();
+
         }
     }
 }

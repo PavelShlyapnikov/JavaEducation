@@ -44,6 +44,5 @@ public class Example_6 {
                 System.out.println();
             }
         }
-
     }
 }

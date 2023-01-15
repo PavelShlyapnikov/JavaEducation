@@ -18,6 +18,7 @@ public class Example_4 {
             }
             str++;
             System.out.println("\r");
+
         }
     }
 }

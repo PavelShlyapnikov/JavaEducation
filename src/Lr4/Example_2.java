@@ -11,6 +11,7 @@ public class Example_2 {
             for (int j = 0; j <=i; j++) {
                 System.out.print("#");
             }
+
             str = str + 1;
             System.out.println("\r");
         }
